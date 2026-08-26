@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Inter', sans-serif;
+    --font-mono: 'Courier Prime', monospace;
+  }
+}
+
+body {
+  background-color: #fdfae8;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+  color: #1c1c11;
+  font-family: var(--font-sans);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Custom dossier & clip styling from brand guidelines */
+.paper-clip {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 32px;
+  background-color: #a17f3b;
+  border-radius: 6px;
+  z-index: 10;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.dossier-card {
+  background-color: #f7f4e2;
+  border-top: 4px solid #4a1c1c;
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.dossier-card:hover {
+  border-color: #a17f3b;
+  border-top-color: #4a1c1c;
+}
+
+.editorial-divider {
+  border-top: 2px solid #000000;
+  border-bottom: 0.5px solid #000000;
+  height: 4px;
+  width: 100%;
+  margin: 24px 0;
+  opacity: 0.8;
+}
+
+.dossier-clip {
+  width: 40px;
+  height: 12px;
+  background: linear-gradient(to bottom, #a17f3b, #5d4201);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.paper-texture {
+  background-color: #fdfae8;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter2'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter2)' opacity='0.03'/%3E%3C/svg%3E");
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.08);
+}
+

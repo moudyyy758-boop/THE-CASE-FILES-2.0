@@ -1,0 +1,6 @@
+{
+  "name": "The Case Files",
+  "description": "Professional murder mystery game platform and interactive investigation bureau.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
